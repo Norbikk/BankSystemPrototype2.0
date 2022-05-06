@@ -1,0 +1,126 @@
+﻿<Page x:Class="BankSystemPrototype.DataPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:BankSystemPrototype"
+      mc:Ignorable="d"
+      Background="Azure"
+      Title="DataPage" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="79*"/>
+            <ColumnDefinition Width="81*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="1" Grid.Row="3"
+                FontSize="25"
+                Content="Назад"
+                Background="White" Click="Button_Click" Margin="188,42,35,42"/>
+        <ListView x:Name="UsersList" Margin="30,30,3,72" Grid.RowSpan="4" SelectionChanged="OnClickUser">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock x:Name="NameDescription" HorizontalAlignment="Left" Margin="222,34,0,0" Text="Имя: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"
+                   />
+        <TextBox x:Name="NameBox" Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,53,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="15" Grid.Column="1"
+                 IsEnabled="False"
+/>
+        <TextBlock x:Name="SurnameDescription" HorizontalAlignment="Left" 
+            Text="Фамилия: " 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" Margin="209,97,0,0" Grid.Column="1"/>
+        <TextBox x:Name="SurnameBox"
+            Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,117,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="15" Grid.Column="1"
+                 IsEnabled="False"
+/>
+        <TextBlock x:Name="SecondnameDescription" HorizontalAlignment="Left" 
+            Margin="209,2,0,0" 
+            Text="Отчество: " 
+            TextWrapping="Wrap"
+            VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"/>
+        <TextBox x:Name="SecondnameBox"
+            Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,22,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="15" Grid.Row="1" Grid.Column="1"
+                 IsEnabled="False"
+/>
+        <TextBlock x:Name="PhoneNumberText" HorizontalAlignment="Left" Margin="190,58,0,0" Text="Номер Телефона: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"
+                   />
+        <TextBox x:Name="PhoneBox" Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,75,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="15" Grid.Row="1" Grid.Column="1"
+                 IsEnabled="False"
+/>
+        <TextBlock x:Name="BirthdayDescription" HorizontalAlignment="Left" Margin="194,118,0,0" Text="Дата рождения: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1"
+                   />
+        <TextBox x:Name="BirthdayBox" Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,0,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="15" Grid.Row="1" Grid.Column="1" Grid.RowSpan="2"
+                 IsEnabled="False"
+/>
+        <TextBlock x:Name="AccountDescription" HorizontalAlignment="Left" Margin="162,32,0,0" Text="Номер депозитного счета: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"
+                   />
+        <TextBox x:Name="DepositeAccountBox" Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,53,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="15" Grid.Row="2" Grid.Column="1"
+                 IsEnabled="False"
+/>
+        <TextBlock x:Name="AccountDescription_Copy" HorizontalAlignment="Left" Margin="154,97,0,0" Text="Номер не депозитного счета: " TextWrapping="Wrap" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"
+                   />
+        <TextBox x:Name="NonDepositeAccountBox" Text="" 
+            TextWrapping="Wrap" 
+            Margin="104,118,35,0" 
+            FontStyle="Italic"
+            FontWeight="Medium"
+            HorizontalContentAlignment="Center"
+            VerticalAlignment="Top"
+            FontSize="15" Grid.Row="2" Grid.Column="1"
+            IsEnabled="False"
+/>
+        <Frame Name ="MainFrame" Grid.ColumnSpan="2" Grid.RowSpan="4" d:IsHidden="True"/>
+    </Grid>
+</Page>

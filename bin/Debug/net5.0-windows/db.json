@@ -1,0 +1,91 @@
+{
+  "$type": "System.Collections.ObjectModel.ObservableCollection`1[[BankSystemPrototype.User, BankLibrary]], System.ObjectModel",
+  "$values": [
+    {
+      "$type": "BankSystemPrototype.User, BankLibrary",
+      "Id": "621c5b13-86b2-473e-b6e2-ecc9b39cd5a2",
+      "Name": "asdasd",
+      "Surname": "qweqwe",
+      "Secondname": "asdasdasd",
+      "PhoneNumber": "123123123",
+      "BirthDay": "2022-02-03T00:00:00",
+      "Accounts": {
+        "$type": "System.Collections.Generic.List`1[[BankSystemPrototype.Account, BankLibrary]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "BankSystemPrototype.DepositeAccount, BankLibrary",
+            "isClosed": false,
+            "AccountNumber": "bee04c33-faaf-4573-9370-8167a54f6044",
+            "Cash": 0
+          }
+        ]
+      }
+    },
+    {
+      "$type": "BankSystemPrototype.User, BankLibrary",
+      "Id": "6a4b5e83-e26a-4da1-bbfa-95f442ae5432",
+      "Name": "xxxxx",
+      "Surname": "zzzz",
+      "Secondname": "ccccc",
+      "PhoneNumber": "654565656",
+      "BirthDay": "2022-08-05T00:00:00",
+      "Accounts": {
+        "$type": "System.Collections.Generic.List`1[[BankSystemPrototype.Account, BankLibrary]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "BankSystemPrototype.NonDepositeAccount, BankLibrary",
+            "isClosed": false,
+            "AccountNumber": "c5dacad9-77df-49a1-8324-24dcc4289a12",
+            "Cash": 1000000634
+          }
+        ]
+      }
+    },
+    {
+      "$type": "BankSystemPrototype.User, BankLibrary",
+      "Id": "c5a94ade-f236-4885-a5a2-65085273c737",
+      "Name": "Кирилл",
+      "Surname": "Кривихин",
+      "Secondname": "Игоревич",
+      "PhoneNumber": "цуййцуйцу",
+      "BirthDay": "2022-05-02T00:00:00",
+      "Accounts": {
+        "$type": "System.Collections.Generic.List`1[[BankSystemPrototype.Account, BankLibrary]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "BankSystemPrototype.DepositeAccount, BankLibrary",
+            "isClosed": false,
+            "AccountNumber": "7e0ba9ef-734b-4c59-ab8e-647117abf372",
+            "Cash": 0
+          }
+        ]
+      }
+    },
+    {
+      "$type": "BankSystemPrototype.User, BankLibrary",
+      "Id": "c78faa2f-014f-41e2-a339-3442097ff00e",
+      "Name": "iiii",
+      "Surname": "uuuuu",
+      "Secondname": "ttttt",
+      "PhoneNumber": "321321",
+      "BirthDay": "2022-02-16T00:00:00",
+      "Accounts": {
+        "$type": "System.Collections.Generic.List`1[[BankSystemPrototype.Account, BankLibrary]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "BankSystemPrototype.DepositeAccount, BankLibrary",
+            "isClosed": false,
+            "AccountNumber": "8cca6001-3826-48c4-a405-7ec77203d0d3",
+            "Cash": 567
+          },
+          {
+            "$type": "BankSystemPrototype.NonDepositeAccount, BankLibrary",
+            "isClosed": false,
+            "AccountNumber": "5b28264c-9d39-428f-9d13-d3e19134a879",
+            "Cash": 11111111111111310
+          }
+        ]
+      }
+    }
+  ]
+}
